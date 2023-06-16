@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 24px;
+            color: #666;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .image {
+            width: 40%;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+        .text {
+            width: 55%;
+        }
+        .text p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+        }
+        @media screen and (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+            .image, .text {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+        }
+        .nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .nav ul li {
+            margin: 10px;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+        .nav ul li a:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">我的量化投资项目</h1>
+        <h2 class="subtitle">用人工智能来分析和预测股市走势</h2>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="progress.html">项目进展</a></li>
+                <li><a href="results.html">成果分享</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="image">
+                <img src="me.jpg" alt="my photo">
+            </div>
+            <div class="text">
+                <p>你好，我是一名量化交易的开发者，我对人工智能和金融有着浓厚的兴趣和热情。我希望能够通过我的项目，为投资者提供更好的服务和价值。</p>
+                <p>如果你对我的项目感兴趣，或者想要了解更多关于量化投资和人工智能的知识，请随时联系我。你可以通过以下方式和我取得联系：</p>
+                <p>邮箱：myemail@example.com</p>
+                <p>电话：123-456-7890</p>
+                <p>微信：mywechat</p>
+                <p>我期待着和你的沟通和合作。</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
