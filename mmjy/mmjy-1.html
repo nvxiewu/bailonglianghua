@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 24px;
+            color: #666;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .image {
+            width: 40%;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+        .text {
+            width: 55%;
+        }
+        .text p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+        }
+        @media screen and (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+            .image, .text {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+        }
+        .nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .nav ul li {
+            margin: 10px;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+        .nav ul li a:hover {
+            color: #666;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        article h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        article img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        article h3 a {
+            text-decoration: none;
+        }
+        article h3 a:hover {
+            color: #666;
+        }
+        article p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+        }
+        article time {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">我的量化投资项目</h1>
+        <h2 class="subtitle">用人工智能来分析和预测股市走势</h2>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="progress.html">项目进展</a></li>
+                <li><a href="results.html">成果分享</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <article>
+                <h1>项目进展：第六周</h1>
+                <p>本周，我完成了股市数据的清洗和预处理，使用了必应的自然语言处理服务，对新闻和社交媒体数据进行了情感分析和关键词提取，使用了必应的机器视觉服务，对财报数据进行了图像识别和文本提取。</p>
+                <p>股市数据的清洗和预处理是一个很重要的步骤，它可以去除无效或错误的数据，填补缺失或异常的数据，转换不同格式或来源的数据，使得数据更加规范和一致。我使用了必应的数据分析服务，对股票价格，新闻，社交媒体，财报等数据进行了清洗和预处理，得到了一个干净和统一的数据集。</p>
+                <p>新闻和社交媒体数据是一种非结构化的文本数据，它包含了很多有用的信息，如股市的情绪，趋势，事件等。我使用了必应的自然语言处理服务，对新闻和社交媒体数据进行了情感分析和关键词提取，得到了每条数据的情感极性（正面或负面），情感强度（从0到1），以及相关的关键词（如公司名，行业名，事件名等）。</p>
+                <p>财报数据是一种结构化的图像数据，它包含了很多有用的信息，如公司的财务状况，业绩表现，未来计划等。我使用了必应的机器视觉服务，对财报数据进行了图像识别和文本提取，得到了每张财报中的文字内容，并将其转换为可分析的数字格式。</p>
+                <p>这是我使用必应的自然语言处理服务，对新闻和社交媒体数据进行情感分析和关键词提取的结果：</p>
+                <img src="sentiment_analysis.jpg" alt="情感分析和关键词提取的结果">
+                <time datetime="2023-06-23">2023年6月23日</time>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
